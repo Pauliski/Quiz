@@ -1,0 +1,52 @@
+#wrapper{
+    margin-top: 40px;
+}
+#subPage{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+   
+}
+#h1{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+}
+#quest{
+    position: relative;
+    margin-top: 120px;
+}
+.questbtn{
+    margin: 0 5px;;
+    background-color: black;
+    color: white;
+}
+.current{
+    background-color: green;
+}
+.answered{
+    background-color: red;
+}
+#submitbtn{
+    position: relative;
+    margin-top: 20px;
+}
+#quiz-page{
+    height: 100vh;
+}
+@media screen and (max-width: 414px){
+    #quest{
+        
+        position: relative;
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 280px){
+    #quest{
+        
+        position: relative;
+        margin-top: 100px;
+    }
+}

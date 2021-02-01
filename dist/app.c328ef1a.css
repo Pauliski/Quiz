@@ -1,0 +1,134 @@
+.Answers{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.options{
+    padding: 10px;
+    border-left: 4px solid #FF3B3B;
+    background-color: #bbb;
+    margin: 0 0 5px;
+}
+.options:hover{
+    cursor: pointer;
+   
+}
+.selected{
+    background-color: red;
+    color: white;
+    pointer-events: none;
+}
+.select{
+    background-color: red;
+}
+#mybtn{
+    margin: 50 0 0 10;
+}
+.mybtn{
+    margin: 30px  30px 0 auto;
+    width: auto;
+    height: auto;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+}
+.submitbtn{
+    background-color: red;
+    margin-left: 50px;
+}
+.firstbtn{
+    margin-left: 20px;
+}
+@media screen and (max-width: 414px){
+
+.mybtn{
+    margin: 15px 15px 0;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 20px;
+}
+#questionText{
+    font-size: 20px;
+}
+}
+#wrapper{
+    margin-top: 40px;
+}
+#subPage{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+   
+}
+#h1{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+}
+#quest{
+    position: relative;
+    margin-top: 120px;
+}
+.questbtn{
+    margin: 0 5px;;
+    background-color: black;
+    color: white;
+}
+.current{
+    background-color: green;
+}
+.answered{
+    background-color: red;
+}
+#submitbtn{
+    position: relative;
+    margin-top: 20px;
+}
+#quiz-page{
+    height: 100vh;
+}
+@media screen and (max-width: 414px){
+    #quest{
+        
+        position: relative;
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 280px){
+    #quest{
+        
+        position: relative;
+        margin-top: 100px;
+    }
+}
+
+#welcome{
+    margin: 0 20px;
+}
+#warningText{
+    color: red;
+}
+#author{
+    position: absolute;
+    bottom: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0 30px;
+}
+#toTestBtn{
+    width: 100px;
+    height: 50px;
+    background-color: seagreen;
+}
+@media screen and (min-width: 767px){
+    h2, h3{
+        font-size: 40px;
+    }
+}
+
+/*# sourceMappingURL=/app.c328ef1a.css.map */

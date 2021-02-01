@@ -1,0 +1,35 @@
+#subPage{
+    position: relative;
+    background-color: blue;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+}
+#h1{
+    position: absolute;
+    /* text-align: center; */
+   
+    top: 50%;
+}
+#quest{
+    position: absolute;
+    margin:  0 5px;
+    bottom: 20px;
+}
+.questbtn{
+    margin: 0 5px;;
+    background-color: black;
+    color: white;
+}
+.current{
+    background-color: green;
+}
+.answered{
+    background-color: red;
+}
+#submitbtn{
+    position: relative;
+    margin-top: 20px;
+}
+
+/*# sourceMappingURL=/Quiz.f8afa4ad.css.map */
