@@ -18,7 +18,7 @@ export const Quiz = ()=>{
     const [submit, setSubmit] = useState(false)
     const [time, setTime] = useState({}) 
     const [disable, setDisable] = useState(false)
-    const [seconds, setSeconds] = useState(20)
+    const [seconds, setSeconds] = useState(300)
     const firstIndex = questionIndex === 0
     const lastIndex = questionIndex === Questions.length - 1
 
@@ -95,6 +95,7 @@ export const Quiz = ()=>{
     return(
         
         <div id='wrapper'>
+            <div id='wrapper-img'></div>
             {seconds == 0 ?
             <Timer score={score} length = {Questions.length}/>
               :submit

@@ -34035,7 +34035,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Submit.js":[function(require,module,exports) {
+},{"./exam.jpg":[["exam.7d9f72c3.jpg","exam.jpg"],"exam.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Submit.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34167,7 +34167,7 @@ var Quiz = function Quiz() {
       disable = _useState20[0],
       setDisable = _useState20[1];
 
-  var _useState21 = (0, _react.useState)(20),
+  var _useState21 = (0, _react.useState)(300),
       _useState22 = _slicedToArray(_useState21, 2),
       seconds = _useState22[0],
       setSeconds = _useState22[1];
@@ -34256,7 +34256,9 @@ var Quiz = function Quiz() {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     id: "wrapper"
-  }, seconds == 0 ? /*#__PURE__*/_react.default.createElement(_Timer.default, {
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "wrapper-img"
+  }), seconds == 0 ? /*#__PURE__*/_react.default.createElement(_Timer.default, {
     score: score,
     length: _QuestionBank.Questions.length
   }) : submit ? /*#__PURE__*/_react.default.createElement(_Submit.Submit, {
@@ -34309,26 +34311,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Welcome = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _reactRouterDom = require("react-router-dom");
 
 require("./Welcomepage.css");
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var Welcome = function Welcome() {
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     id: "welcome"
-  }, /*#__PURE__*/React.createElement("h1", null, "Instructions"), /*#__PURE__*/React.createElement("h2", null, "Subject: Chemistry ", /*#__PURE__*/React.createElement("br", null), " Test Duration: 20 minutes"), /*#__PURE__*/React.createElement("h3", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Instructions"), /*#__PURE__*/_react.default.createElement("h2", null, "Subject: Chemistry ", /*#__PURE__*/_react.default.createElement("br", null), " Test Duration: 20 minutes"), /*#__PURE__*/_react.default.createElement("h3", {
     id: "warningText"
-  }, "Any form of examination malpratice will result to automatic failure"), /*#__PURE__*/React.createElement(_reactRouterDom.NavLink, {
+  }, "Any form of examination malpratice will result to automatic failure"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
     to: "/test"
-  }, /*#__PURE__*/React.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("button", {
     id: "toTestBtn"
-  }, "Continue")), /*#__PURE__*/React.createElement("nav", {
+  }, "Continue")), /*#__PURE__*/_react.default.createElement("nav", {
     id: "author"
   }, "Pauliski Academy"));
 };
 
 exports.Welcome = Welcome;
-},{"react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Welcomepage.css":"Welcomepage.css"}],"app.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./Welcomepage.css":"Welcomepage.css"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireWildcard(require("react"));
@@ -34441,7 +34447,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57355" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61918" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
