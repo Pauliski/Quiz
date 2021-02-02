@@ -82,7 +82,10 @@ export const Quiz = ()=>{
             }, 1000);
           }
           return ()=>{
-              clearInterval(timer)
+            clearInterval(timer)
+              if(submit === true){
+                clearInterval(timer)
+              }
           }      
       }, [seconds])
 
@@ -96,9 +99,7 @@ export const Quiz = ()=>{
         
         <div id='wrapper'>
             <div id='wrapper-img'></div>
-            {seconds == 0 ?
-            <Timer score={score} length = {Questions.length}/>
-              :submit
+            {submit || seconds === 0
                 ?  <Submit score={score} length = {Questions.length}/>
                 : <div id='quiz-page'>
            <h3>Remaining time: {`${time.h} : ${time.m} : ${time.s}`}</h3>

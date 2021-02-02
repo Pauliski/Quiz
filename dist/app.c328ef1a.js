@@ -34050,9 +34050,11 @@ require("./Quiz.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Submit = function Submit(props) {
-  return /*#__PURE__*/_react.default.createElement("h1", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     id: "h1"
-  }, "You have successfully submitted your assessment ", /*#__PURE__*/_react.default.createElement("br", null), " Your score is ", props.score, " out of ", props.length);
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Your assessment is", /*#__PURE__*/_react.default.createElement("span", {
+    className: "score"
+  }, Math.floor(props.score / props.length * 100), "%")));
 };
 
 exports.Submit = Submit;
@@ -34245,6 +34247,10 @@ var Quiz = function Quiz() {
 
     return function () {
       clearInterval(timer);
+
+      if (submit === true) {
+        clearInterval(timer);
+      }
     };
   }, [seconds]);
 
@@ -34258,10 +34264,7 @@ var Quiz = function Quiz() {
     id: "wrapper"
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "wrapper-img"
-  }), seconds == 0 ? /*#__PURE__*/_react.default.createElement(_Timer.default, {
-    score: score,
-    length: _QuestionBank.Questions.length
-  }) : submit ? /*#__PURE__*/_react.default.createElement(_Submit.Submit, {
+  }), submit || seconds === 0 ? /*#__PURE__*/_react.default.createElement(_Submit.Submit, {
     score: score,
     length: _QuestionBank.Questions.length
   }) : /*#__PURE__*/_react.default.createElement("div", {
@@ -34447,7 +34450,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61918" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65015" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
